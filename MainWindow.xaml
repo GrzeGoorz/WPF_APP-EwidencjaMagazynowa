@@ -1,0 +1,28 @@
+﻿<Window x:Class="APLIKACJA_SQL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:APLIKACJA_SQL"
+        mc:Ignorable="d"
+        Title="Ewidencja magazynowa" Height="500" Width="750">
+    <Grid>
+        <Label Content="MAGAZYN - LOKALIZACJE" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="listaLokalizacji"  Height="NaN" Margin="10,55,551,292" Width="NaN" SelectionChanged="listaLokalizacji_SelectionChanged" Background="#FFE7E3FF" BorderBrush="#FFB0C4FF"/>
+        <Label Name="LabelLokalizacja" Content="WYBIERZ LOKALIZACJĘ" HorizontalAlignment="Left" Margin="242,24,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="listaProduktLokalizacji" Height="NaN" Margin="242,55,318,292" Width="NaN" BorderBrush="#FF3359CA" Background="#FFF6F9E6"/>
+        <ListBox Name="listaAllProdukt"  Height="NaN" Margin="472,55,89,206" Width="NaN" Background="#FFE5F4FF" BorderBrush="#FFB0C4FF" SelectionChanged="listaAllProdukt_SelectionChanged"/>
+        <Button Content="Usuń lokalizację z Bazy" HorizontalAlignment="Left" Margin="10,406,0,0" VerticalAlignment="Top" Height="35" Width="189" Click="Button_Click_UsunLokalizacje" BorderBrush="#FFF96262" Background="#FFFFCCCC"/>
+        <Button Content="Usuń produkt z lokalizacji" HorizontalAlignment="Left" Margin="243,247,0,0" VerticalAlignment="Top" Height="40" Width="189" Click="Button_Click_UsunProduktzLokalizacji" />
+        <Button Content="Dodaj nową lokalizację do bazy" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Height="35" Width="189" Click="Button_Click_DodajLokalizacjedoBazy"/>
+        <Button Content="Dodaj produkt do bazy" HorizontalAlignment="Left" Margin="472,283,0,0" VerticalAlignment="Top" Height="35" Width="189" Click="Button_Click_DodajProduktdoBazy"/>
+        <Button Content="Przypisz produkt do lokalizacji" HorizontalAlignment="Left" Margin="243,203,0,0" VerticalAlignment="Top" Height="39" Width="189" Click="Button_Click_DodajProduktdoLokalizacji"/>
+        <Button Content="Usuń produkt z Bazy" HorizontalAlignment="Left" Margin="472,424,0,0" VerticalAlignment="Top" Height="34" Width="189" Click="Button_Click_UsunProduktzBazy" Background="#FFFFCCCC" BorderBrush="#FFF96666"/>
+        <Button Content="Aktualizuj lokalizację" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" Height="36" Width="189" Click="Button_Click_AktualizacjaLokalizacji"/>
+        <Button Content="Aktualizuj Produkt" HorizontalAlignment="Left" Margin="472,363,0,0" VerticalAlignment="Top" Height="35" Width="189" Click="Button_Click"/>
+        <TextBox Name="textBox1" HorizontalAlignment="Left" Margin="10,247,0,0" Text="ZMIEŃ LUB DODAJ LOKALIZACJĘ" VerticalAlignment="Top" Width="189" Height="40" TextAlignment="Center" TextWrapping="Wrap"/>
+        <TextBox Name="textBox2" HorizontalAlignment="Left" Margin="472,323,0,0" TextWrapping="Wrap" Text="ZMIEŃ LUB DODAJ PRODUKT" VerticalAlignment="Top" Width="189" Height="35" TextAlignment="Center"/>
+        <Label Content="LISTA PRODUKTÓW W BAZIE" HorizontalAlignment="Left" Margin="472,24,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
